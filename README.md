@@ -1,44 +1,35 @@
-git init
-git add .
-git commit -m "Initial commit: add devcontainer and requirements"
-git branch -M main
-git push -u origin main
 # Python Intro — Notebook hands-on lab
 
 Este repositorio contiene un cuaderno Jupyter diseñado como un laboratorio práctico (hands-on) para enseñar los fundamentos de Python a estudiantes.
 
-Archivo principal
+**Archivo principal**
 
 - `Introduccion_a_Python_y_Notebooks.ipynb`: Notebook con explicaciones y celdas preparadas para que los alumnos completen durante la práctica.
 
-Objetivo
+**Objetivo**
 
-El notebook está pensado para ser utilizado en sesiones interactivas de enseñanza. Todas las celdas de código han sido convertidas a comentarios `# TODO:` para que los estudiantes implementen los ejercicios durante la clase.
+El notebook está pensado para ser utilizado en sesiones interactivas de enseñanza. Todas las celdas de código han sido convertidas a comentarios para que los estudiantes implementen los ejercicios durante la clase junto con el profesor.
 
-Quick start (devcontainer)
+**Instrucciones (Codespaces)**
 
-1. Abre la carpeta en VS Code.
-2. Cuando se solicite, reabre en el contenedor (o usa la paleta de comandos: Remote-Containers: Reopen in Container).
-3. El contenedor ejecutará `./setup_env.sh` para instalar las dependencias listadas en `requirements.txt`.
-
-Haz ejecutable el script de setup (si es necesario):
-
+1. Crea un Fork de este repisotrio en tu cuenta de GitHub.
+2. Sólo haz click en el botón de <>Code y luego en Codespaces, inicializa una instancia en main.
+3. Desarrolla el contenido del notebook junto con el profesor.
+4. Al terminar se deben de añadir los cambios más recientes al commit con: 
 ```bash
-chmod +x "./setup_env.sh"
-```
-
-Git: push al remoto
-
-```bash
-# inicializar si aún no está inicializado
-git init
 git add .
-git commit -m "Initial commit: cleaned notebook for hands-on lab"
-
-# añadir remote y empujar (reemplaza la URL del origin si es necesario)
-git remote add origin https://github.com/jorgermzg15/python-intro-students
-git branch -M main
-git push -u origin main
 ```
+5. Después escribir un commit message siguiendo el formato de [Conventional Commit Messages](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13): 
+```bash
+git commit -m "<mensaje>"
+```
+6. Al final sólo hacer push:
+```bash
+git push
+``` 
+Esto reflejará los cambios en su repositorio remoto.
 
-Si el repositorio remoto está vacío, los comandos anteriores crearán la rama `main` y subirán el commit inicial.
+**Entregable**. 
+Liga de su repositorio remoto.
+
+
