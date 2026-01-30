@@ -21,7 +21,7 @@ git add .
 ```
 5. Después escribir un commit message siguiendo el formato de [Conventional Commit Messages](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13): 
 ```bash
-git commit -m "<mensaje>"
+cgit commit -m "<mensaje>"
 ```
 6. Al final sólo hacer push:
 ```bash
